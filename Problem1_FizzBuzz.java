@@ -7,7 +7,13 @@ public class Problem1_FizzBuzz {
 	*	//	If the number is a multiple of 15 output output an FB instead of the number.
 	*/
 	public void print() {
+		int[] numbers = new int[100];
 		int numbersLength = numbers.length;
+		//initialize the numbers array
+		for(int index=0; index<numbersLength; index++){
+			numbers[index] = index+1;
+		}
+	
 		for(int index=0; index < numbersLength; index++){
 			int number = numbers[index];
 			if((number%3) == 0){
